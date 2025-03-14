@@ -5,3 +5,28 @@
 -- select department_Id,sum(salary) as sum_salary from hr.EMPLOYEES group by DEPARTMENT_ID
 -- select job_id,count(*) as empolyee_count from hr.employees group by JOB_ID  
 -- select job_id,avg(salary) as avg_salry from hr.employees GROUP by job_id
+-- select job_id,max(salary) as max_salry from hr.employees GROUP by job_id
+-- select job_id,min(salary) as min_salry from hr.employees GROUP by job_id
+-- select job_id,sum(salary) as sum_salry from hr.employees GROUP by job_id
+-- select EXTRACT(year from hire_date) as hire_year,count(*) as total_employees from hr.EMPLOYEES group by EXTRACT(year from hire_date) order by hire_year
+-- select manager_id ,count(*) from hr.EMPLOYEES where MANAGER_ID is not null group by MANAGER_ID
+-- select manager_id ,max(salary) from hr.EMPLOYEES where MANAGER_ID is not null group by MANAGER_ID
+-- select manager_id ,min(salary) from hr.EMPLOYEES where MANAGER_ID is not null group by MANAGER_ID
+-- select manager_id ,avg(salary) from hr.EMPLOYEES where MANAGER_ID is not null group by MANAGER_ID
+-- select EXTRACT(month from hire_date) as hire_month,count(*) as total_hired from hr.EMPLOYEES group by EXTRACT(month from hire_date) order by hire_month
+-- SELECT department_id, SUM(salary) AS total_salary
+-- FROM hr.employees
+-- GROUP BY department_id
+-- ORDER BY total_salary DESC
+-- FETCH FIRST 1 ROW ONLY;
+-- select job_id,avg(salary) as avg_saly from hr.EMPLOYEES group by job_id order by avg_saly FETCH FIRST 1 ROW ONLY
+-- SELECT department_id, COUNT(*) AS employees_with_commission
+-- FROM hr.employees
+-- WHERE commission_pct IS NOT NULL
+-- GROUP BY department_id;
+-- SELECT department_id, SUM(salary) AS total_salary_with_commission
+-- FROM hr.employees
+-- WHERE commission_pct IS NOT NULL
+-- GROUP BY department_id;
+
+-- assigment
