@@ -1,1 +1,7 @@
-
+-- select department_id,count(*) as total_employees from hr.EMPLOYEES group by DEPARTMENT_ID
+-- select department_id,avg(salary) as avg_salary from hr.EMPLOYEES group by department_id
+-- select department_id ,max(salary) as max_salary from hr.EMPLOYEES group by DEPARTMENT_ID
+-- select department_Id ,min(salary) as min_salary from hr.employees group by DEPARTMENT_ID
+-- select department_Id,sum(salary) as sum_salary from hr.EMPLOYEES group by DEPARTMENT_ID
+-- select job_id,count(*) as empolyee_count from hr.employees group by JOB_ID  
+-- select job_id,avg(salary) as avg_salry from hr.employees GROUP by job_id
