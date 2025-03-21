@@ -1,0 +1,29 @@
+-- select count(department_id),count(distinct department_id) from hr.EMPLOYEES
+-- select avg(salary),min(salary),max(salary),MEDIAN(salary),STDDEV(salary),VARIANCE(salary) from hr.EMPLOYEES
+-- select DEPARTMENT_ID ,count(*)from hr.EMPLOYEES group by department_id
+-- select department_id,avg(salary) from hr.EMPLOYEES group by DEPARTMENT_ID
+-- select department_id,count(distinct job_id) from hr.employees group by department_id
+
+-- select department_id,min(salary) from hr.EMPLOYEES group by DEPARTMENT_ID
+-- select department_id,max(salary) from hr.EMPLOYEES group by DEPARTMENT_ID
+-- select department_id,stddev(salary) from hr.EMPLOYEES group by DEPARTMENT_ID
+-- select department_id,variance(salary) from hr.EMPLOYEES group by DEPARTMENT_ID
+-- select department_id,median(salary) from hr.EMPLOYEES group by DEPARTMENT_ID
+
+-- select DEPARTMENT_ID ,count(*)from hr.EMPLOYEES group by department_id having count(*)>5
+-- select DEPARTMENT_ID ,avg(salary) from hr.EMPLOYEES group by department_id having avg(salary)>5000
+-- select DEPARTMENT_ID ,avg(salary) from hr.EMPLOYEES group by department_id having avg(salary) between 4000 and 5000
+-- select DEPARTMENT_ID ,count(distinct JOB_ID)from hr.EMPLOYEES group by department_id having count(DISTINCT JOB_ID)>3
+
+-- select employee_id,salary from hr.EMPLOYEES order by SALARY
+-- select employee_id,salary from hr.EMPLOYEES order by SALARY desc
+-- select department_id,min(salary), max(salary) from hr.EMPLOYEES group by DEPARTMENT_ID having min(salary)>5000 and max(salary)>25000 order by min(salary)
+-- select department_id ,min(salary),max(salary) from hr.employees  group by department_id having salary between 5000 and 25000 order by min(salary) asc
+
+-- SELECT department_id, 
+--        MIN(salary) AS min_salary, 
+--        MAX(salary) AS max_salary
+-- FROM hr.EMPLOYEES
+-- GROUP BY department_id
+-- HAVING MIN(salary) > 5000 AND MAX(salary) > 25000
+-- ORDER BY min_salary;
