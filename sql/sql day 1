@@ -1,1 +1,30 @@
 
+-- select 2 from dual
+
+-- string functions
+
+-- select first_name from hr.employees
+-- select first_name ,lower(first_name) lc,upper(first_name) uc from hr.employees
+-- select upper('Data') from dual
+-- select upper('Data'),lower('DATA'),length('data'),initcap('data engineering'),ltrim('  data '),rtrim('  data ') from dual
+-- select lpad('113',5,'0') from dual
+-- select rpad('1234567',5,'0') from dual
+-- select trim('  data  ') from dual
+-- select replace('data science','science','engineering') from dual
+-- select ceil(12.5) from dual
+-- select floor(12.5) from dual
+-- SELECT round(12.3456,1) from dual
+-- SELECT round(123456,-1) from dual
+-- SELECT round(12.3456,0) from dual
+
+-- select trunc(1234.4578,2) from dual
+-- select trunc(1234.4578,2) from dual
+-- select power(2,3) from dual
+-- select mod(10,3) from dual
+-- select sqrt(25) from dual
+-- select sign(-15) from dual
+-- select exp(1) from dual
+-- select ln(10) from dual
+-- select log(10,1000) from dual
+-- select greatest(10,30,400,50,70,5) from dual
+-- select least(10,2,3,4) from dual
