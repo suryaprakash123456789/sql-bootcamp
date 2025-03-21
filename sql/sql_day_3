@@ -1,0 +1,39 @@
+-- select sysdate  from dual
+-- select systimestamp from dual
+-- select current_date from dual
+-- select current_timestamp from dual
+-- select dbtimezone from dual
+
+-- UTC
+
+
+-- select sysdate,sysdate+7 as nextweek  from dual 
+-- select sysdate,sysdate-17 as previousweek  from dual 
+-- select hire_date,hire_date+7 as nextweek from hr.EMPLOYEES
+-- select systimestamp,systimestamp+interval '2' HOUR from dual
+-- select systimestamp,systimestamp+interval '2' minute from dual
+-- select systimestamp,systimestamp+interval '2' SECOND from dual
+-- select systimestamp,systimestamp+interval '2' month from dual
+-- select systimestamp,systimestamp+interval '2' year from dual
+-- select systimestamp,systimestamp+interval '2' day +interval '4' month from dual
+-- select hire_date,extract(year from hire_date) as year,extract(month from hire_date) as month,extract(day from hire_date) as day from hr.EMPLOYEES
+-- select add_months(sysdate,6) from dual
+-- select sysdate,next_day(sysdate,'tuesday') from dual
+-- select abs(months_between(hire_date,sysdate))/12 as yearexp from hr.EMPLOYEES
+-- select to_char(sysdate,'day') from dual
+
+-- null value functions
+-- select null from dual
+-- select nvl(null,'data engineering') from dual
+-- select nvl(null,20) from dual   
+
+-- nvl2 - (exp,not null,null)
+-- select nvl2('data','have value','no value')
+-- select nvl2(null,'have value','no value')
+
+
+-- coalesce  - returns first non none value
+
+-- select coalesce(null,null,2220,333) from dual
+-- select coalesce(hire_Date,sysdate) from hr.EMPLOYEES
+--  select coalesce(commission,Bonus,0) from hr.employees
