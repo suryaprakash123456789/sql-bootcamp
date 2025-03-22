@@ -1,1 +1,92 @@
 
+-- DECLARE
+-- Student_name VARCHAR2(50): ='EDUKRON'
+-- BEGIN
+--     DBMS_OUTLINE.PUT_LINE('Hello' || Student_name)
+-- END
+
+-- declare
+--     type emp_record is record (
+--      emp_id number, emp_name varchar2(20),emp_salary number(10,2));
+--       emp emp_record;
+-- begin
+--     emp.emp_id:=100;
+--     emp.emp_name:='edukron';
+--     emp.emp_salary:=20000;
+--     DBMS_OUTPUT.PUT_LINE(emp.emp_name || ' '|| emp.emp_id || ' ' ||emp.emp_salary);
+-- end;
+
+-- DECLARE
+--  student_name varchar2(100):='edukron';
+-- BEGIN
+--     DBMS_OUTPUT.PUT_LINE('hello' || student_name);
+-- end;
+
+-- SET SERVEROUTPUT ON;
+
+-- commit;
+
+
+-- DECLARE
+-- emp_name varchar2(50);
+-- salary NUMBER;
+-- begin
+--     select first_name,salary into emp_name,salary from hr.employees where employee_id=101;
+--     dbms_output.PUT_LINE(emp_name||salary);
+-- end;
+
+-- DECLARE
+-- emp_status VARCHAR2(20);
+-- BEGIN
+--     select case when salary>5000 then 'high'
+--     else 'low' END
+--     into emp_status from hr.employees where EMPLOYEE_ID=101;
+--     dbms_output.PUT_LINE(emp_status);
+-- end;
+
+-- DECLARE
+-- emp_status VARCHAR2(50);
+-- BEGIN
+--     select case when salary>5000 then 'hike'
+--     else 'low' end into emp_status from hr.EMPLOYEES where EMPLOYEE_ID=101;
+--     DBMS_OUTPUT.PUT_LINE(emp_status);
+-- end;
+
+-- DECLARE
+-- no_rows number;
+-- BEGIN
+--     select count(*) into no_rows from hr.employees;
+--     dbms_output.PUT_LINE(no_rows);
+-- end;
+
+-- DECLARE
+-- salary_range number;
+-- begin
+--     select max(salary)-min(salary) into salary_range from hr.employees;
+--     dbms_output.PUT_LINE(salary_range);
+-- end;
+
+-- DECLARE
+-- min_salary number;
+-- max_salary number;
+-- BEGIN
+--     select max(salary),min(salary) into max_salary,min_salary from hr.employees;
+--     dbms_output.PUT_LINE(max_salary-min_salary);
+-- end;
+
+-- loops
+
+-- begin
+--     for i in 1..5 loop
+--     DBMS_OUTPUT.PUT_LINE(i);
+--     end loop;
+-- end;
+
+-- DECLARE
+-- x number:=1;
+-- BEGIN
+--     while x<5 LOOP
+--     dbms_output.PUT_LINE(x);
+--     x:=x+1;
+--     end loop;
+-- end;
