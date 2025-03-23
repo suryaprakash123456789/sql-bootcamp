@@ -1,1 +1,412 @@
+-- if,else ,if else ,continue,while,exit
+
+-- declare 
+--     variable1 number:=10;
+-- begin 
+-- if variable1>15 then
+--         dbms_output.put_line('number is greate than 5');
+--     end if ;
+-- end ;
+
+-- declare 
+-- v_score number:=10;
+-- begin
+--     if v_score>=5 then
+--      dbms_output.put_line('pass');
+--     else
+--      dbms_output.put_line('fail');
+--     end if;
+-- end;
+
+-- DECLARE
+-- v_score number:=80;
+-- BEGIN
+--     if v_score<50 then 
+--        dbms_output.PUT_LINE('average');
+--     elsif v_score<75 then
+--        dbms_output.put_line('good');
+--     else
+--        dbms_output.put_line('very good');
+--     end if;
+-- end;
+
+
+-- SET SERVEROUTPUT ON;
+
+-- declare
+-- emp_name  varchar2(20);
+-- emp_salary number;
+-- grade_value varchar2(20);
+
+-- BEGIN
+--     select first_name,salary into emp_name,emp_salary from hr.EMPLOYEES where EMPLOYEE_ID=101;
+--     if emp_salary>30000 THEN
+--     grade_value:='garde:A';
+--     elsif emp_salary>20000 THEN
+--     grade_value:='garde B';
+--     ELSE
+--     grade_value:='grade c';
+--     end if;
+--     dbms_output.put_line(emp_name || emp_salary || grade_value);
+-- end;
+
+-- declare 
+-- emp_name VARCHAR2(20):='jhon';
+-- emp_salary number:=45000;
+-- grade_value varchar2(20);
+
+-- begin
+--     if emp_salary>30000 then
+--     grade_value:='grade:high';
+--     iF  emp_salary<70000 THEN
+--     grade_value:='grade:very high';
+--     ELSe
+--     grade_value:='grade:low';
+--     end if;
+--     ELSE
+--     grade_value:='low';
+--     end if;
+--     dbms_output.put_line(emp_name || emp_salary || grade_value);
+-- end;
+
+-- DECLARE
+-- v_counter number:=1;
+-- BEGIN
+--     LOOP
+--         dbms_output.PUT_LINE(v_counter);
+--         v_counter:=v_counter+1;
+--         exit when v_counter>4;
+--     end loop;
+-- end;
+
+-- DECLARE
+-- v_counter number:=1;
+-- BEGIN
+--     LOOP
+--         dbms_output.PUT_LINE(v_counter);
+--         v_counter:=v_counter+1;
+--         exit when v_counter>100;
+--     end loop;
+-- end;
+
+-- BEGIN
+--     for i in 1..5 LOOP
+--     dbms_output.PUT_LINE('iteration ' || i);
+--     end loop;
+-- end;
+
+
+-- begin 
+--     for i in reverse  1..5 LOOP
+--     dbms_output.PUT_LINE('iteration'|| i);
+--     end loop;
+-- end;
+
+-- begin 
+--     for i in reverse 1..10 LOOP
+--     if mod(i,2)=0 THEN
+--     dbms_output.PUT_LINE('iteration' || i);
+--     end if;
+--     end loop;
+-- end;
+
+-- BEGIN
+--     for i in 1..5 LOOP
+--     dbms_output.put_line(i || i*i);
+--     end loop;
+-- end;
+
+declare 
+a number:=0;
+b number:=1;
+c number;
+
+BEGIN 
+    dbms_output.PUT_LINE(a);
+    dbms_output.PUT_LINE(b);
+    for i in 1..10 loop
+    c:=a+b;
+    dbms_output.put_line(c);
+    a:=b;
+    b:=c;
+    end loop;
+end;
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
